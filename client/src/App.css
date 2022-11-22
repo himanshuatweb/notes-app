@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+*{
+  margin: 0px;
+  padding:0px;
+  box-sizing: border-box;
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a{
+  color:inherit;
+}
+
+.main, .auth{
+  position: relative;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #e5e5f7;
+  background-color: #e5e5f7;
+  opacity: 0.8;
+  background-size: 20px 20px;
+  background-image:  repeating-linear-gradient(0deg, #444cf7, #444cf7 1px, #e5e5f7 1px, #e5e5f7);
+}
+
+
+
+.about{
+  position: absolute;
+  right:1rem;
+  bottom:1rem;
+  font-size: 1.5rem;
+  text-decoration: underline;
+  font-weight: 100;
+  cursor: pointer;
+
+}
+
+.about-main{
+
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  opacity: 0.8;
+  background-size: 20px 20px;
+  background-image:  repeating-linear-gradient(0deg, #444cf7, #444cf7 1px, #e5e5f7 1px, #e5e5f7);
+
+}
+
+.button-back{
+  margin:20px 0;
+  border:2px solid #333;
+  padding:10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+
+.button-back:hover{
+  color:#fff;
+  background-color: #333;
+  transform: scale(1.2);
+}
+
+
+.crud-main{
+  border:5px solid rgb(226, 211, 211);
+  border-radius: 15px;
+
+  color:#fff;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  width: 500px;
+  height: 700px;
+  background: linear-gradient(90deg, #1f005c, #5b0060, #870160, #ac255e, #ca485c, #e16b5c, #f39060, #ffb56b);
+  opacity: 0.9;
+  position: relative;
+}
+.crud-main .crud-heading{
+  text-align: center;
+  margin: 20px 0;
+}
+.crud-create input{
+  padding:10px;
+  margin:0 20px;
+  width: 80%;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+
+}
+
+.crud-create input:focus{
+  outline: none;
+}
+
+.btn{
+  font-size: 1.5rem;
+  font-weight: bold;
+  background: transparent;
+  outline: none;
+  border:none;
+  color:#fff;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.list{
+  margin: 0 20px;
+  margin-bottom: .7rem;
+  padding:1rem;
+  background-color: rgba(0, 0, 0, 0.504);
+  font-size: 1.5rem;
+
+  display: flex;
+}
+
+
+.list .image{
+  flex:1;
+  width: 100px;
+  height: 100px;
+}
+
+.list .image img{
+  width: 100%;
+  height: 100%;
+}
+
+.list .text{
+  flex:1;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+
+
+/* Pop Up Modal */
+.popup-content{
+  padding:0px;
+  border:0px;
+  outline:none;
+  width: unset;
+  border-radius: 10px;
+  overflow: hidden;
+
+}
+
+.modal{
+  background:red;
+  padding:40px 20px;
+  width: 250px !important;
+  text-align: center;
+  opacity: 0.7;
+  color:#fff;
+  
+}
+.modal .header{
+  font-size: 1.5rem;
+}
+
+.modal .actions button{
+  margin:10px;
+  margin-top: 20px;
+  padding:10px 15px;
+  cursor: pointer;
+
+}
+
+.pagination{
+  position: absolute ;
+  bottom: 10px;
+  width: 90%;
+  left: 5%;
+  background: #000;
+  border-radius: 10px;
+}
+
+.pagination ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pagination ul li{
+  list-style-type: none;
+}
+
+.pagination ul li {
+  background-color: #444cf7;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+.pagination ul .selected{
+  background: white;
+  color:#000;
+}
+
+
+.pagination ul li.previous, .pagination ul li.next{
+   background: #ccc;
+   padding:10px;
+   color:#333;
+   cursor: pointer;
+   background-color: green;
+}
+
+.pagination ul li.previous.disabled, .pagination ul li.next.disabled{
+  cursor: not-allowed;
+  background: red;
+  color:#fff;
+}
+
+
+.signup{
+  background-color: rgba(0, 0, 0, 0.66);
+  width: 400px;
+  height: 500px;
+  color:#fff;
+}
+
+.signup h2{
+  text-align: center;
+  margin:20px 0;
+}
+
+.logout-button{
+  position: absolute;
+  left: 20px;
+  top:20px;
+  padding: 10px 20px;
+  color: #fff;
+  background: #000;
+  cursor: pointer;
+  border: 5px solid #333;
+  z-index: 99;
+}
+
+.list{
+  position: relative;
+}
+
+.time{
+  position: absolute;
+  font-size: .8rem;
+  right: 5px;
+  top:5px;
+}
+
+
+
