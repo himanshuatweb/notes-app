@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const API = axios.create({baseURL : `http://localhost:5000`});
+const API = axios.create({baseURL : `https://api-notes-app.onrender.com`});
 // API.interceptors.request.use( (req)=>{
 //     req.headers.authorization = `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJhbUBnbWFpbC5jb20iLCJpZCI6IjYzNzM1ZjJlMGQ4NDZkMjNlNGU3ZTgyZiIsImlhdCI6MTY2ODUwNjc2OSwiZXhwIjoxNjY4NTEwMzY5fQ.sFMjwZ9z25qeJArhX_M6ys63X9SKum-0HjkeKG0NXyE`
 

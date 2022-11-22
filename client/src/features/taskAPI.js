@@ -3,7 +3,7 @@ import axios from 'axios'
 const API_URL = '/api/task'
 
 
-const API = axios.create({baseURL : `http://localhost:5000`});
+const API = axios.create({baseURL : `https://api-notes-app.onrender.com`});
 API.interceptors.request.use( (req)=>{
     req.headers.authorization = `Bearer ${JSON.parse(localStorage.getItem('profile')).token}`
     return req;
